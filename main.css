@@ -72,7 +72,7 @@
 video#bgvid { 
   position: fixed;
   top: 50%;
-  left: 46%;
+  left: 50%;
   height: 130%;
   width: auto;
   z-index: -100;
