@@ -1,0 +1,132 @@
+
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4vh;
+    color:#000000; 
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  div {
+    margin: 0%;
+  }
+  
+  @media (max-width: 800px) {
+    img {
+      width: 200px;
+    }
+    }
+  
+  
+  .header {
+    padding:0px;
+    color: black;
+    position: fixed;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    font-size: 4vh;
+    left: 0px;
+  }
+  
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Centered text */
+  .box {
+    display: inline-block;
+    
+  }
+  
+  .content {
+    padding: 0px;
+  }
+
+  .button {
+    padding: 0px 0px;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    border:0px; 
+    border-style:solid; 
+    border-color:#000000; 
+    background-color: #ffffff; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 0px;
+  }
+
+
+
+
+video#bgvid { 
+  position: fixed;
+  top: 50%;
+  left: 46%;
+  height: 130%;
+  width: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  /*background: url(polina.jpg) no-repeat;*/
+  background-size: cover; 
+}
+
+a   {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+    text-decoration: none;
+}
+
+a:active {
+  color: rgb(255, 78, 166);
+    text-decoration: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: blue;
+
+}
+
+::selection {
+  color: blue;
+}
+
+.bottomleft-text {
+  width: 75%;
+  height: 4%;
+  position: fixed;
+  left: 6px;
+  bottom: 6px;
+  z-index: 51;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 4vh;
+}
+
+.bottomright-text {
+  width: 75%;
+  height: 4%;
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+  z-index: 51;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 4vh;
+  text-align: right;
+}
