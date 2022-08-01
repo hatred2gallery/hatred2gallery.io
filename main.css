@@ -1,0 +1,126 @@
+
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4vh;
+    color:#000000; 
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  div {
+    margin: 0%;
+  }
+  
+  @media (max-width: 800px) {
+    img {
+      width: 200px;
+    }
+    }
+  
+  
+  .header {
+    padding:0px;
+    color: black;
+    position: fixed;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    font-size: 4vh;
+    left: 0px;
+  }
+  
+  /*  image and text */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .address-box {
+    padding-right: 10px;
+    color: black;
+    position: fixed;
+    z-index: 1;
+    font-size: 4vh;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    text-align: right;
+  }
+
+
+  .address-box span {
+    align-self: flex-end;
+  }
+  
+  
+  /* Centered text */
+  .box {
+    display: inline-block;
+    
+  }
+  
+
+video#bgvid { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 130%;
+  width: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  /*background: url(polina.jpg) no-repeat;*/
+  background-size: cover; 
+}
+
+a   {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+  color: rgb(240, 206, 227);
+    text-decoration: none;
+}
+
+a:active {
+  color: rgb(240, 206, 227);
+    text-decoration: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: lightskyblue;
+
+}
+
+::selection {
+  color: lightskyblue;
+}
+
+.bottomleft-text {
+  width: 75%;
+  height: 4%;
+  position: fixed;
+  left: 6px;
+  bottom: 6px;
+  z-index: 51;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 4vh;
+}
+
+.bottomright-text {
+  width: 75%;
+  height: 4%;
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+  z-index: 51;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 4vh;
+  text-align: right;
+}
