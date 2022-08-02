@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+    <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>time.taxi &ndash; an ode to escapism!</title>
+    <meta name="description" content="a daily dose of diversion presented by kls0e and fineapple cuts.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="time.taxi.css">
+      <meta property="og:type" content="video">
+      <meta property="og:title" content="time.taxi">
+      <meta property="og:url" content="https://time.taxi">
+      <meta property="og:image" content="https://time.taxi/time.taxi.og.jpg">
+      <meta property="og:description" content="a daily dose of diversion presented by kls0e and fineapple cuts.">
+      <meta property="video:duration" content="50000">
+      <meta property="video:release_date" content="2021-10-01">
+      <meta property="video:tag" content="kls0e">
+      <meta property="video:tag" content="fineapple cuts">
+      <meta property="video:tag" content="vibe division">
+      <meta property="video:tag" content="diversion">
+      <meta property="video:tag" content="escapism">
+      <meta property="video:director" content="fineapple cuts">
+      <meta property="video:writer" content="kls0e">
+          <script>
+              var _paq = window._paq = window._paq || [];
+              _paq.push(['trackPageView']);
+              _paq.push(['enableLinkTracking']);
+              (function() {
+                  var u="//time.taxi/stats/";
+                  _paq.push(['setTrackerUrl', u+'matomo.php']);
+                  _paq.push(['setSiteId', '1']);
+                  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+                          })();
+          </script>
+    </head>
+
+    <body bgcolor=black>
+    	<div id="cornerlogo" onclick="toggleInfo();"></div>
+	<div id="video-player" class="fullscreen-bg" onclick="toggleInfo();">
+		<video class="fullscreen-bg__video" autoplay muted playsinline loop poster="time.taxi.png">
+  		<source src="bg-hatred.mp4" type="video/mp4">
+
+		</video>
+	
+	</div>
+
+     <div class="revue" id="revue" style="display:none;" onclick="toggleInfo();">
+        <img id="timetaxis" src="time.taxi-s.png">___<h2 style="display:inline;"><em><span id=claim></span> <span id="onview"></span></em><br></h2>
+        <h4><span class="brand"><a href="/" target="_self">time.taxi</a></span> is presented by kls0e and fineapple cuts___</h4>
+        <ul>
+        	<li>selected, cut, color-graded and remixed by <a href="https://www.youtube.com/channel/UC9PvvLdeyKiZELFp7o7I5VQ" target="_blank">vibe division</a></li>
+        	<li>muted, reversed, boosted and stabilized by <a href="mailto:wave@time.taxi">kls0e</a></li>
+        </ul>
+        <em><span onclick="playMusic();" style="text-decoration: underline;">play music</span> / <span onclick="openFullscreen();" style="text-decoration: underline;">go fullscreen</span> / <span onclick="playMusic();openFullscreen();" style="text-decoration: underline;" class=glow>play+fullscreen</span> / <span onclick=" location.reload();" style="text-decoration: underline;">refresh</span></em>
+        <br>
+        <br>
+          <audio controls style="opacity: 0.7;" id=music>
+            <source src="https://listen.radioking.com/radio/64968/stream/104227">
+          </audio><br><span style="font-size: x-small;">&#127925; by courtesy of <a href="https://www.perfectmoods.nl/" target="_blank">perfectmoods.nl</a><br>
+        <em>Thanks to <a href="https://github.com/georgmartius/vid.stab" target="_blank">Georg Martius</a>, <a href="https://slicejack.com/author/luka/" target="_blank">Luka Čavka</a>, <a href="https://gent.media" target="_blank">Mikhail Sharanda</a>, Peter of <a href="https://www.perfectmoods.nl/" target="_blank">perfectmoods.nl</a>, Rusty of <a href="https://somafm.com/groovesalad/"  target="_blank">soma.fm</a> + all FFmpeg contributors. processed and hosted on <a href="https://www.oracle.com/cloud/" target="_blank">oci</a>. Have a safe travel</em> :-)</span>
+
+    </div>
+      </body>
+
+	<script>
+    var poolofclaims = [
+    'a daily dose of diversion!', 
+    'a glimpse of a feeling!', 
+    'an ode to escapism!', 
+    'tune back the hence of time.', 
+    'reverse social engineering!', 
+    'maybe evoke a feel?', 
+    'in a world...',
+    'it\'s a series of tubes!',
+    'hello and goodbye!',
+    'time is relative:',
+    'your frame of reference!',
+    'bespokely elaborate!'
+    ];
+
+    var selectedclaim = poolofclaims[Math.floor(Math.random()*poolofclaims.length)];
+
+    document.getElementById('claim').innerHTML = selectedclaim;
+
+    
+
+    var music = document.getElementById("music");
+
+  function playMusic() {
+    music.play();
+    }
+( function() {
+			var videoPlayer = document.getElementById( 'video-player' ),
+				video = videoPlayer.getElementsByClassName( 'fullscreen-bg__video' )[0],
+				playlist = videoPlayer.getElementsByClassName( 'fullscreen-bg__playlist' )[0],
+				source = video.getElementsByTagName( 'source' ),
+				linkList = [],
+				videoDirectory = '/to/',
+				currentVideo = 0,
+				allLinks = playlist.children,
+				linkNumber = allLinks.length,
+				i, filename;
+
+			function playVideo( index ) {
+				allLinks[index].classList.add( 'current-video' );
+				currentVideo = index;
+
+				source[0].src = videoDirectory + linkList[index] + '.mp4';
+
+				document.getElementById("onview").innerHTML = allLinks[currentVideo].href.substring(allLinks[currentVideo].href.lastIndexOf('/')+1).replace('.mp4','');
+
+				video.load();
+				video.play();
+			}
+
+			for ( i = 0; i < linkNumber; i++ ) {
+				filename = allLinks[i].href;
+				linkList[i] = filename.match( /([^\/]+)(?=\.\w+$)/ )[0];
+			}
+
+			 function generateRandomInteger(max) {
+    		return Math.floor(Math.random() * max) + 1;
+			}
+			video.addEventListener( 'ended', function () {
+				allLinks[currentVideo].classList.remove( 'current-video' );
+
+				nextVideo = generateRandomInteger(256);
+				if ( nextVideo >= linkNumber) {
+					nextVideo = 27;
+				}
+
+				playVideo( nextVideo );
+			} );
+
+		} () );
+	function toggleInfo(){
+  var x = document.getElementById("revue");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("cornerlogo").style.display = "none";
+  } else {
+    x.style.display = "none";
+    document.getElementById("cornerlogo").style.display = "block";
+  }
+}
+		function openInfo(){
+  var x = document.getElementById("revue");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } 
+}
+		function kls0eInfo(){
+  var x = document.getElementById("revue");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } 
+}
+
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { 
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { 
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+</html>
