@@ -104,12 +104,12 @@ a:active {
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: lightskyblue;
+  color: #08e8de;
 
 }
 
 ::selection {
-  color: lightskyblue;
+  color: #08e8de;
 }
 
 .bottomleft-text {
