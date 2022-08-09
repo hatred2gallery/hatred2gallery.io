@@ -126,7 +126,7 @@ a:active {
   z-index: 51;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 4vh;
-  animation: blur 2s;
+  animation: blur 1.25s;
   animation-iteration-count: 1;
   transition-timing-function: ease;
 }
@@ -141,7 +141,7 @@ a:active {
   font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 4vh;
   text-align: right;
-  animation: blur 2s;
+  animation: blur 1.25s;
   animation-iteration-count: 1;
   transition-timing-function: ease;
 }
