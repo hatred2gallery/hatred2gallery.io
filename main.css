@@ -66,14 +66,11 @@
     align-self: flex-end;
   }
   
-  
   /* Centered text */
   .box {
     display: inline-block;
-    
   }
   
-
 video#bgvid { 
   position: fixed;
   top: 50%;
@@ -94,12 +91,12 @@ a   {
 }
 
 a:hover {
-  color: rgb(240, 206, 227);
+  color: #08e8de;
     text-decoration: none;
 }
 
 a:active {
-  color: rgb(240, 206, 227);
+  color: #08e8de;
     text-decoration: none;
 }
 
@@ -119,7 +116,7 @@ a:active {
   left: 6px;
   bottom: 6px;
   z-index: 51;
-  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:  'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
   font-size: 4vh;
 }
 
