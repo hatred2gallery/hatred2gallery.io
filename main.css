@@ -36,12 +36,17 @@
   padding-left: 100%;
   animation: marquee 15s  linear infinite;
 }
+
 @keyframes marquee {
   0%   { transform: translate(0, 0); }
   100% { transform: translate(-100%, 0); }
 }
 
-  
+@keyframes blur {
+  0% { -webkit-filter: blur(160px);}
+  100% { -webkit-filter: blur(0px);}
+}
+
   /*  image and text */
   .container {
     position: relative;
@@ -83,6 +88,9 @@ video#bgvid {
   transform: translateX(-50%) translateY(-50%);
   /*background: url(polina.jpg) no-repeat;*/
   background-size: cover; 
+  animation: blur .5s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease;
 }
 
 a   {
@@ -118,6 +126,9 @@ a:active {
   z-index: 51;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 4vh;
+  animation: blur 2s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease;
 }
 
 .bottomright-text {
@@ -130,4 +141,7 @@ a:active {
   font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 4vh;
   text-align: right;
+  animation: blur 2s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease;
 }
