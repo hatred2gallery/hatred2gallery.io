@@ -15,6 +15,12 @@
   div {
     margin: 0%;
   }
+
+  .text {
+    margin: 8px 8px 8px 8px;
+    left: 8px !important;
+    top: 8px !important;
+  }
    
   .header {
     top: -3%;
@@ -65,14 +71,14 @@
   }
 
   .description-box {
-    padding-right: 6px;
-    padding-bottom: 4vh; 
+    padding-right: 8px;
+    padding-bottom: 3vh; 
     color: black;
     position: fixed;
     z-index: 1;
     font-size: 4vh;
     right: 0px;
-    bottom: 0px;
+    bottom: 10px;
     display: flex;
     text-align: right;
   }
@@ -89,7 +95,7 @@
     color: black;
     /*text-rendering: optimizeLegibility; */
     position: fixed;
-    z-index: -1;
+    z-index: 1;
     right: 0px;
     bottom: 4vh;
     margin-bottom: 3px;
@@ -110,7 +116,7 @@ font-weight: 1; */
     height: 4%;
     position: fixed;
     left: 8px;
-    bottom: 6px;
+    bottom: 8px;
     z-index: 51;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4vh;
@@ -123,8 +129,8 @@ font-weight: 1; */
     width: 75%;
     height: 4%;
     position: fixed;
-    bottom: 6px;
-    right: 6px;
+    bottom: 8px;
+    right: 8px;
     z-index: 51;
     font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4vh;
@@ -173,11 +179,13 @@ a:active {
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: #08e8de;
+  /*color: #08e8de;*/
+
 
 }
 
 ::selection {
-  color: #08e8de;
+  /*color: #08e8de;*/
+  color: blue;
 }
 
