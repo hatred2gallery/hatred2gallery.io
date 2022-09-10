@@ -24,6 +24,7 @@
     width: 100%;
     left: 0px;
   }
+
 .marquee {
   width: 100%;
   white-space: nowrap;
@@ -52,7 +53,7 @@
   /*  image and text */
   .container {
     position: relative;
-    text-align: center;
+    text-align: left;
     color: white;
     margin: 1rem 1rem 1rem 1rem;
     padding: 3rem 1rem 1rem 1rem;
