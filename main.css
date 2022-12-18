@@ -135,7 +135,7 @@
   .topleft-text {
     width: 75%;
     height: 4%;
-    position: fixed;
+    position: relative;
     left: 8px;
     top: 4vh;
     z-index: 51;
@@ -144,6 +144,24 @@
     animation: blur .75s;
     animation-iteration-count: 1;
     transition-timing-function: linear;
+    }
+
+    .exhibitions-text {
+      width: 75%;
+      height: 100%;
+      position: relative;
+      overflow: auto;
+      left: 8px;
+      top: 4vh;
+      z-index: 10;
+      font-family: "Romain", 'Times New Roman', serif;
+      font-size: 2vh;
+      }
+  
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
   
   .bottomright-text {
@@ -223,5 +241,5 @@ a:active {
 }
 
 ::selection {
-  color: coral;
+  color: blue;
 }
