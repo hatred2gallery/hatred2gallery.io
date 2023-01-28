@@ -235,11 +235,11 @@ a:active {
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: lightgrey;
+  color: grey;
 
 
 }
 
 ::selection {
-  color: blue;
+  color: grey;
 }
